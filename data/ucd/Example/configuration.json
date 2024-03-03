@@ -1,0 +1,58 @@
+{
+  "general": {
+    "default_speed": 50,
+    "parser_directory": "./parser/",
+    "candidate_parser": "ElectionCandidateParser",
+    "ballot_parser": "ElectionBallotParser"
+  },
+  "races": [{
+      "race_id": "race_president",
+      "race_position": "President",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "President",
+        "display_order": 1
+      }
+    },
+    {
+      "race_id": "race_senate",
+      "race_position": "Senators",
+      "race_max_winners": 6,
+      "race_extended_data": {
+        "parser_group": "Senator",
+        "parser_candidates_droppedout": [""],
+        "display_order": 2
+      }
+    },
+    {
+      "race_id": "race_eavp",
+      "race_position": "EAVP",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "EAVP",
+        "parser_candidates_droppedout": [""],
+        "display_order": 3
+      }
+    },
+    {
+      "race_id": "race_isr",
+      "race_position": "ISR",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "ISR",
+        "parser_candidates_droppedout": [""],
+        "display_order": 4
+      }
+    },
+    {
+      "race_id": "race_",
+      "race_position": "TSR",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "TSR",
+        "parser_candidates_droppedout": [""],
+        "display_order": 5
+      }
+    }
+  ]
+}

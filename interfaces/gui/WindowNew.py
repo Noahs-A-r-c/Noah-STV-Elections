@@ -154,7 +154,8 @@ class WindowNew(wx.Dialog):
             race.run()
 
         WindowMain(None, election)
-        self.EndModal(wx.ID_OK)
+        #Removed by ASUCD, Noah Nguyen, 7/31/2023. Allows program to run without closing
+        #self.EndModal(wx.ID_OK)
 
     def ui_check_complete(self):
         self.button_create.Enable(not not (self.configuration_file and self.candidate_file and self.ballot_file))

@@ -1,32 +1,53 @@
 {
   "general": {
-    "default_speed": 50,
+    "default_speed": 100,
     "parser_directory": "./parser/",
     "candidate_parser": "ElectionCandidateParser",
     "ballot_parser": "ElectionBallotParser"
   },
-  "races": [
-    {
+  "races": [{
       "race_id": "race_president",
       "race_position": "President",
       "race_max_winners": 1,
       "race_extended_data": {
         "parser_group": "President",
-        "parser_writein_fields": 1,
-        "parser_writein_whitelist": ["Cheese"],
-        "display_order": 2
+        "display_order": 1
       }
     },
     {
       "race_id": "race_senate",
       "race_position": "Senators",
-      "race_max_winners": 3,
+      "race_max_winners": 6,
       "race_extended_data": {
         "parser_group": "Senator",
-        "parser_writein_fields": 1,
-        "parser_writein_whitelist": ["Ramen"],
-        "parser_candidates_droppedout": ["Salad - Vegan Party"],
-        "display_order": 1
+        "display_order": 2
+      }
+    },
+    {
+      "race_id": "race_eavp",
+      "race_position": "EAVP",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "EAVP",
+        "display_order": 3
+      }
+    },
+    {
+      "race_id": "race_isr",
+      "race_position": "ISR",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "ISR",
+        "display_order": 4
+      }
+    },
+    {
+      "race_id": "race_",
+      "race_position": "TSR",
+      "race_max_winners": 1,
+      "race_extended_data": {
+        "parser_group": "TSR",
+        "display_order": 5
       }
     }
   ]
