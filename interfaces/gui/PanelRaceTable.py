@@ -76,7 +76,7 @@ class PanelRaceTable(wx.Panel):
             dc.SetFont(self.GetFont())
             point_size = self.GetFont().GetPointSize()
             temp_point_size = 1.5 * point_size
-            self.grid.SetColSize(grid_table.ColumnsFindString("Status"), dc.GetTextExtent("TRANSFERRING")[0] + temp_point_size)
+            self.grid.SetColSize(grid_table.ColumnsFindString("Status"), dc.GetTextExtent("TRANSFERRING")[0] + int(temp_point_size))
             self.grid.SetColSize(grid_table.ColumnsFindString("Score"), dc.GetTextExtent("0000 (0000.0000)")[0] + 5)
             self.set_party_color()
             self.on_size(None)

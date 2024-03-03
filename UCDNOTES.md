@@ -8,11 +8,12 @@ Debugging Notes:
 	- all candidates in the Clean Voting results must be in the format "Candidate - Party". The hyphen is necessary for the parser.
 
 File locations:
-- Parser JSON: UC_STV/qualtrics/parser/configuration.json
+- Parser JSON: UC_STV/qualtrics/config_parser/configuration.json
 - Clean Votes CSV: UC_STV/qualtrics/results/"Example Voting Prototype Clean.csv"
 
 Changes:
 - I've commented out the EndModal() function in UC_STV/interfaces/gui/WindowNew.py on line 158 as it caused the elections software to close prematurely on my Windows 11 machine.
+- I've changed line 79 on UC_STV/interfaces/gui/PanelRaceTable.py, adding an int() function. This allowed it to work on a MAC OS
 
 Working with Qualtrics:
 - Clean ballots must be in the format as the example
